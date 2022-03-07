@@ -1,0 +1,59 @@
+.header{
+    padding-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F5F5F5;
+    margin-bottom: 50px;
+
+    .header__col{
+        display: flex;
+        align-items: center;
+    }
+}
+
+.logo{
+    width: 40px;
+    height: 40px;
+    margin-right: 38px;
+}
+
+.menu{
+    font-family: 'Alegreya Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: #292929;
+
+    .menu__list{
+        display: flex;
+    
+        .menu__item{
+            margin-right: 27px;
+    
+            &:last-child{
+                margin-right: 0px;
+            }
+        }
+    }
+}
+
+.contacts{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: right;
+    align-items: center;
+}
+
+.contacts__icon{
+    max-width: 14px;
+    max-height: 14px;
+
+    .contact__icon{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}

@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Play', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.42;
+    font-size: $baseFontsSize;
+    background-color: #fff;
+    color: #666666;
+    -webkt-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+img {
+    display: inline-block;
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+    font-weight: normal;
+}
+
+h1{
+    text-transform: uppercase;
+    font-family: Play;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 52px; 
+    color: #292929;
+}
+
+h2 {
+    font-family: Play;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #292929;
+}
+
+h3 {
+    font-family: Play;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #292929;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    font-family: Play;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #666666;
+}
+
+button {
+    line-height: 1.7;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.container {
+    margin: 0 auto;
+    width: 915px;
+}
+
+.buttons{
+    display: block;
+}
+
+.btn{
+    width: 163px;
+    height: 54px;
+    padding: 18px 41px;
+    border-radius: 30px;
+    font-family: Play;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    color: #fff; 
+    border: none; 
+    text-transform: uppercase;
+}
+
+.btn--theme--red{
+    background: $colorRed;
+
+    &:hover{
+        background: #f5002d;
+    }
+}
+
+.btn--theme--transparent{
+    background: transparent;
+
+    &:hover{
+        color: #a9a9a9;
+    }
+}
+
+.wrapper {
+    overflow: hidden;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
