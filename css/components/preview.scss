@@ -6,7 +6,9 @@
     display: flex;
     height: 100vh;
     min-height: 650px;
+    // padding: 50px;
 }
+
 
 .container--preview{
     display: flex;
@@ -15,17 +17,10 @@
     height: 100%;
 }
 
-.preview__main{
-    
-    padding-bottom: 60px;
-}
-
-
-
 .preview__text{
-    margin-bottom: 84px;
-    padding-top: 43px;
+    
     max-width: 45%;
+    margin-bottom: 70px;
 
     .preview__text-title{
         margin-bottom: 23px;
@@ -36,13 +31,14 @@
         font-weight: 400;
         font-size: 21px;
         line-height: 25px;
-        margin-bottom: 51px;
+        margin-bottom: 35px;
         color: #292929;
     }
 }
 
 .features{
     display: flex;
+    padding-bottom: 60px;
     
     .features__item{
         margin-right: 33px;

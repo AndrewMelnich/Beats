@@ -91,7 +91,7 @@ button {
 
 .container {
     margin: 0 auto;
-    width: 915px;
+    width: 940px;
 }
 
 .buttons{
@@ -99,8 +99,7 @@ button {
 }
 
 .btn{
-    width: 163px;
-    height: 54px;
+    display: inline-block;
     padding: 18px 41px;
     border-radius: 30px;
     font-family: Play;
@@ -123,6 +122,9 @@ button {
 
 .btn--theme--transparent{
     background: transparent;
+    text-transform: none;
+    padding: 18px 10px;
+    font-size: 16px;
 
     &:hover{
         color: #a9a9a9;
