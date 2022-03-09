@@ -353,7 +353,7 @@ button {
 }
 .advantage__item::before {
   position: absolute;
-  content: url(../../image/advantage/decor.svg);
+  content: url(../image/advantage/decor.svg);
   top: 62px;
   right: 0;
   -webkit-transform: translate(50%);
@@ -607,7 +607,7 @@ button {
   border-radius: 5px;
 }
 .radio--checkbox .radio__visible::before {
-  background: url(../../image/icons/ok.svg) center center no-repeat;
+  background: url(../image/icons/ok.svg) center center no-repeat;
 }
 
 .radio__title {
