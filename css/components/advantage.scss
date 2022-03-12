@@ -1,9 +1,9 @@
 .advantage{
     display: flex;
     flex-direction: column;
-    padding: 100px 0;
+    // padding: rem(100px) 0;
     height: 100vh;
-    min-height: 650px;
+    min-height: rem(650px);
 }
 
 .container--advantage{
@@ -18,17 +18,32 @@
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    max-width: 590px;
-    margin: 0 auto 60px;
+    padding: 0 18%;
+    padding-top: rem(100px);
+    margin-bottom: rem(62px);
 
     .advantage__title{
-        margin-bottom: 18px;
+        margin-bottom: rem(18px);
+    }
+
+    @include tablets{
+        padding: 0 12%;
+        margin-bottom: rem(53px);
+    }
+
+    @include phones{
+        padding: 0 10%;
+        // margin-bottom: rem(53px);
     }
 }
 
 .advantage__list{
     display: flex;
     text-align: center;
+
+    @include phones{
+        flex-direction: column;
+    }
 }
 
 .advantage__item{
@@ -39,14 +54,17 @@
     &::before{
         position: absolute;
         content: url(../image/advantage/decor.svg);
-        top: 62px;
+        top: rem(62px);
         right: 0;
         transform: translate(50%);
-
+        
+        @include tablets{
+            display: none;
+        }
     }
     
     &:last-child{
-        padding-right: 0px;
+        padding-right: rem(0px);
 
         &::before{
             display: none;
@@ -54,28 +72,40 @@
     }
 
     &:first-child{
-        padding-left: 0px;
+        padding-left: rem(0px);
+    }
+
+    @include phones{
+        display: flex;
+        align-items: center;
+        text-align: start;
+        padding: 0;
+        margin-bottom: rem(31px);
     }
 }
 
 .advantage__item-img{
     display: flex;
-    width: 128px;
-    height: 128px;
+    width: rem(128px);
+    height: rem(128px);
     border-radius: 50%;
     background: #F2F5F4;   
     text-align: center;
-    margin: 0 auto 24px;
+    margin: 0 auto rem(24px);
+    padding: rem(30px); 
+    flex-shrink: 0;
 
     &-margin{
-        // margin: auto;
         height: 100%;
-        width: 100%;
-        padding: 30px;   
+        width: 100%; 
     }
     
+    @include phones {
+        margin-right: rem(12px);
+        margin-bottom: 0;
+    }
 }
 
-.advantage__item-title{
-    margin-bottom: 7px;
+.advantage__text-title{
+    margin-bottom: rem(7px);
 }
